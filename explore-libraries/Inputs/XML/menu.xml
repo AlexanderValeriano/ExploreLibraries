@@ -35,5 +35,5 @@
         <price>$2.95</price>
         <description>Yummy melted cheese on grilled sourdough slices</description>
         <calories>300</calories>
-    </food>
-</breakfast_menu>
+    <name>Grilled Cheese Sandwich</name><price>$2.95</price><description>Yummy melted cheese on grilled sourdough slices</description><calories>300</calories></food>
+<food /></breakfast_menu>
