@@ -16,7 +16,7 @@ ${SEARCH_TERM} =  Ferrari 458
 *** Test Cases ***
 Logged out user can search for products
     [Tags]  Web
-    ${new_browser} =  Get Selection From User  Which browser?  chrome  ie  firefox
+    ${new_browser} =  Get Selection From User  Which browser?  chrome  edge  firefox
     Set Global Variable  ${BROWSER}  ${new_browser}
     AmazonApp.Search for Products
 

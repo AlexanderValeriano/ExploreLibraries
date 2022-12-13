@@ -8,7 +8,7 @@ Search for Products
     Submit Search
 
 Enter Search Term
-    Input Text  id=twotabsearchtextbox  ${SEARCH_TERM}
+    Input Text  id:twotabsearchtextbox  ${SEARCH_TERM}
 
 Submit Search
-    Click Button  xpath=//*[@id="nav-search"]/form/div[2]/div/input
+    Click Button  xpath://input[@id='nav-search-submit-button']

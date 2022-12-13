@@ -7,4 +7,4 @@ Verify Search Completed
 
 Click Product Link
     [Documentation]  Clicks on the first product in the search results list
-    Click Link  css=#result_0 a.s-access-detail-page
+    Click Link  xpath://body/div[@id='a-page']/div[@id='search']/div[1]/div[1]/div[1]/span[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/h2[1]/a[1]
