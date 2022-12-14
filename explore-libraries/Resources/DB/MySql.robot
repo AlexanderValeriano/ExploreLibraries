@@ -54,10 +54,10 @@ Verify New Record Added
 
 Verify Last Record
     # notice here we use LIMIT 1 instead of TOP 1 in SQL Server
-    ${queryResults} =  Query  SELECT TOP 1 * FROM emp ORDER BY EMPNO DESC
+    ${queryResults} =  Query  SELECT * FROM emp ORDER BY EMPNO DESC LIMIT 1
     # Examine the (0-based) 3rd field of the first record in the results
-    Should be Equal as Strings  ${queryResults[0][2]}  ${LAST_NAME}
-    Log  ${queryResults[0][2]}
+    Should be Equal as Strings  ${queryResults[0][1]}  ${LAST_NAME}
+    Log  ${queryResults[0][1]}
 
 Log All Rows
     ${queryResults} =  Query  SELECT * FROM emp ORDER BY EMPNO
