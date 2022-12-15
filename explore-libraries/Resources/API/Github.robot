@@ -1,6 +1,6 @@
 *** Settings ***
 Library  RequestsLibrary
-Library  Selenium2Library  # only used to display something we get back from API test
+Library  SeleniumLibrary  # only used to display something we get back from API test
 
 *** Variables ***
 
@@ -34,4 +34,4 @@ Display Emoji
     # Check the Response body
     ${json} =  Set Variable  ${response.json()}
     ${emoji_url} =  Set Variable  ${json['aerial_tramway']}
-    Open Browser  ${emoji_url}  ie
+    Open Browser  ${emoji_url}  chrome
